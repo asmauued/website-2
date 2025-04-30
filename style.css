@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  color: black;
+  font-family: "poppins", sans-serif;
+  background: rgb(251, 207, 5);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: white;
+  border-bottom: 1px solid yellow;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000;
+  font-style: italic;
+  margin-left: 17rem;
+}
+
+.navbar .navbar-nav {
+  margin-right: 19rem;
+}
+
+.navbar .navbar-nav a {
+  color: black;
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 0 0.8rem;
+  transition: transform 250ms, opacity 400ms;
+}
+
+.navbar .navbar-nav a:hover {
+  color: rgb(251, 207, 5);
+  transform: scale(0.9);
+  opacity: 1;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid rgb(251, 207, 5);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  background-image: url(Header-bg.jpg);
+  opacity: 0.86;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: block;
+}
+
+.hero .content {
+  text-align: center;
+  padding: 2rem 7%;
+}
+.hero .content h1 {
+  text-align: center;
+  text-decoration: solid;
+  font-size: 4.188rem;
+  margin-bottom: 1.25rem;
+  margin-top: 10rem;
+}
+.hero .content p {
+  font-size: 1.125rem;
+  margin-top: 0.625=rem;
+  font-weight: 500;
+  font-weight: 300;
+}
+
+.hero .content .cta {
+  background-color: rgb(251, 207, 5);
+  display: inline-block;
+  padding: 0.938rem 2.063rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-top: 6rem;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu {
+  background-color: white;
+  padding: 3rem 4rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: -3rem;
+  z-index: 20;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.menu h2 {
+  text-align: center;
+  font-size: 2.313rem;
+  margin-bottom: 3rem;
+  text-shadow: 1px 1px 3px rgba(1, 1, 1, 0.6);
+}
+
+.menu h5 {
+  text-align: center;
+  font-size: 1.125rem;
+  max-width: 50rem;
+  margin: auto;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.menu .row {
+    margin-top: 10rem;
+    margin-left: 3.8rem;
+    justify-content: center;
+    display: inline-block;
+}
+
+.menu .row .info {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.menu .row .info .point svg {
+  width: 17.708rem;
+  height: 3.85rem;
+  color: #000;
+}
+
+.menu .row .info .point h3 {
+  font-size: 1.125rem;
+  color: #000;
+}
+
+.menu .row .info p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6r;
+} 
+
+
+.about .row {
+  margin-top: 2rem;
+}
+.about h2 {
+  margin-top: 2rem;
+}
+
